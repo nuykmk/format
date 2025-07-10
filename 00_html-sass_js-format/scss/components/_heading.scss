@@ -1,0 +1,32 @@
+// セクションタイトル汎用
+.section__title {
+  text-align: center;
+  position: relative;
+
+  &-en {
+    font-size: 8rem;
+    font-weight: 700;
+    color: $cSub;
+    letter-spacing: 0.7rem;
+    z-index: 5;
+    position: relative;
+
+    @include mq(xl) {
+      font-size: 6rem;
+      letter-spacing: 0.3rem;
+    }
+  }
+
+  &-ja {
+    position: absolute;
+    z-index: 10;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+
+    @include mq(xl) {
+      bottom: -7px;
+    }
+  }
+}
