@@ -1,0 +1,159 @@
+html {
+  font-size: 62.5%; /* 1rem = 10px */
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #464646;
+  background: #fff;
+  letter-spacing: 0.05em;
+  line-height: 1.6;
+  margin: 0 auto;
+  padding: 0;
+}
+
+body > * {
+  max-width: 3000px;
+  margin: 0 auto;
+}
+
+section {
+  max-width: 3000px;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+.layout-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+h2 {
+  font-size: 4rem;
+  font-weight: 400;
+}
+@media screen and (max-width: 1000px) {
+  h2 {
+    font-size: 2.5rem;
+  }
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+@media screen and (max-width: 1000px) {
+  h3 {
+    font-size: 2rem;
+  }
+}
+
+.sp-only {
+  display: none !important;
+}
+@media screen and (max-width: 1000px) {
+  .sp-only {
+    display: block !important;
+  }
+}
+
+.pc-only {
+  display: block !important;
+}
+@media screen and (max-width: 1000px) {
+  .pc-only {
+    display: none !important;
+  }
+}
+
+.sp-inline-only {
+  display: none !important;
+}
+@media screen and (max-width: 1000px) {
+  .sp-inline-only {
+    display: inline !important;
+  }
+}
+
+.pc-inline-only {
+  display: inline !important;
+}
+@media screen and (max-width: 1000px) {
+  .pc-inline-only {
+    display: none !important;
+  }
+}
+
+.sp-inline-none {
+  display: inline;
+}
+@media screen and (max-width: 1000px) {
+  .sp-inline-none {
+    display: none;
+  }
+}
+
+.br-pc-only {
+  display: inline;
+}
+@media screen and (max-width: 1000px) {
+  .br-pc-only {
+    display: none;
+  }
+}
+
+.br-sp-only {
+  display: none;
+}
+@media screen and (max-width: 1000px) {
+  .br-sp-only {
+    display: inline;
+  }
+}
+
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  z-index: 9999;
+}
+
+.section__title {
+  text-align: center;
+  position: relative;
+}
+.section__title-en {
+  font-size: 8rem;
+  font-weight: 700;
+  color: #464646;
+  letter-spacing: 0.7rem;
+  z-index: 5;
+  position: relative;
+}
+@media screen and (max-width: 1000px) {
+  .section__title-en {
+    font-size: 6rem;
+    letter-spacing: 0.3rem;
+  }
+}
+.section__title-ja {
+  position: absolute;
+  z-index: 10;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+}
+@media screen and (max-width: 1000px) {
+  .section__title-ja {
+    bottom: -7px;
+  }
+}/*# sourceMappingURL=style.css.map */
